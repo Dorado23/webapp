@@ -1,14 +1,25 @@
 import react from 'react';
-import { Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 
-function Root() {
-    return (
-        <div>
-            <section>
-                {/* Render child route components */}
+const Root =() => (
+        <div className="webapp">
+            <header>
+                <h1>L-e-k</h1>
+
+               <nav>
+               <NavLink to="/">Home</NavLink>
+               <NavLink to="/">Kundvagn</NavLink>
+               <NavLink to="/">Login</NavLink>
+               <NavLink to="/products">Details</NavLink>
+               <NavLink to="/">Admin</NavLink>
+               </nav>
+            </header>   
+
+            <main>
+
                 <Outlet/>
-            </section>
+            </main>
         </div>
     );
-}
+
 export default Root; 

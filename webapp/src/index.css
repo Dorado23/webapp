@@ -22,7 +22,13 @@ body {
   --button-color: #6ED2CC;
   --start-color: #FDCB4A;
   --middle-number-color: #273E02;
-  
+}
+
+.h4 {
+  display: flex;
+  flex-direction: center;
+
+
 
 
 }

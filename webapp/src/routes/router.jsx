@@ -1,7 +1,7 @@
-import Home from "./Home";
+import Landing from "./Landing";
 import Admin from "./Admin";
 import Login from "./Login";
-import Details from "./Details";
+//import Details from "./Details";
 import NotFound from ":/NotFound";
 import { createHashRouter, RouterProvider } from "react-router-dom";
 
@@ -12,8 +12,8 @@ const router = createHashRouter([
         element: <Root />,
         children: [
             {
-            path:  "/Home",
-            element: <Home/>,
+            path:  "/Landing",
+            element: <Landing/>,
             
         },
 
@@ -47,14 +47,7 @@ const router = createHashRouter([
     },
 ]);
 
-
-ReactDOM.createRoot(document.getElementById("root")).render(
-	<React.StrictMode>
-		<RouterProvider router={router} />
-	</React.StrictMode>
-);
-
-
+export { router }
 
 
 
